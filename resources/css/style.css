@@ -120,3 +120,11 @@ header nav {
     margin-left: auto;
     justify-content: center;
 }
+
+.contact_info {
+  text-align: center;
+}
+
+.copyright {
+  text-align: left;
+}
