@@ -5,6 +5,13 @@ body {
   opacity: 0.9;
   font-family: Helvetica;
   margin: 0;
+  flex-shrink: 0;
+}
+
+h2, h4 {
+  padding: 10px;
+  margin: 0px;
+  display: block;
 }
 
 a {
@@ -62,11 +69,54 @@ header nav {
 }
 
 #tea_of_the_month {
-  text-align: center;
-  width: 1000px;
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 600px;
 }
 
-#tea_of_the_month h2 {
-  padding: 10px;
+#tea_of_the_month img {
+  height: 200px;
+  width: 300px;
+  display: block;
+  margin: 10px;
+}
+
+#totm_header {
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+  text-align: center;
+}
+
+#tea_of_the_month h2, h4, span {
+  text-align: center;
+}
+
+.ave_tea, .bizarre_tea, .berry_blitz, .rum_tea, .seasonal_donuts {
+  text-align: center;
+}
+
+#locations {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  display: block;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.address {
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+  margin-top: 15px;
+  flex-direction: row;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.address_cont {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
 }
